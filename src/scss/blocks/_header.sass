@@ -1,0 +1,196 @@
+.header__container
+	display: flex
+	align-items: center
+	padding: 0 140px 0 140px
+	@media (max-width: 991px)
+		padding: 0 30px 0 30px
+	
+/*--------------------  Шапка  --------------------*/
+.header
+	position: fixed
+	width: 100%
+	background-color: #000
+	padding: 48px 0 12px 0
+	z-index: 2
+	&__logo
+		display: block
+		max-width: 122px
+	@media (max-width: 497px)
+		padding: 25px 0 12px 0
+
+.header__menu
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 1037px
+
+
+.menu__body
+	width: 350px
+	height: 40px
+	padding: 9px 20px 15px 20px
+	margin-left: 20px
+
+.menu__link
+	font-family: DMMono
+	font-weight: 400
+	font-size: 16px
+	color: #fff
+	text-decoration: none
+	&:hover
+		color: rgba(255, 255, 255, 0.8)
+
+.square__menu
+	display: flex
+	justify-content: space-between
+	margin-left: auto
+
+.square__link
+	width: 36px
+	height: 36px
+	background-color: #fff
+	margin-right: 12px
+	margin-left: auto
+	&:hover
+		background-color: rgba(255, 255, 255, 0.8)
+	&:nth-child(4)
+		margin-right: 0
+	&_1
+		position: relative
+		&::before
+			content: ''
+			width: 20px
+			height: 20px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			background: url("@img/icons/header/twitter.svg") center (center / cover) no-repeat
+	&_2
+		position: relative
+		&::before
+			content: ''
+			width: 20px
+			height: 20px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			background: url("@img/icons/header/discord.svg") center (center / cover) no-repeat
+	&_3
+		position: relative
+		&::before
+			content: ''
+			width: 20px
+			height: 20px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			background: url("@img/icons/header/youtube.svg") center (center / cover) no-repeat
+	&_4
+		position: relative
+		&::before
+			content: ''
+			width: 20px
+			height: 20px
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			background: url("@img/icons/header/telegram.svg") center (center / cover) no-repeat
+
+
+
+/*--------------------  Меню  --------------------*/
+
+.menu__icon
+	display: none
+	@media (max-width: 991px)
+		padding: 10px
+		display: block
+		margin-left: 40px
+		width: 30px
+		height: 18px
+		position: relative
+		z-index: 5
+		cursor: pointer
+		span
+			position: absolute
+			top: calc(50% - 1px)
+			left: 0
+			width: 100%
+			height: 2px
+			background-color: #fff
+			transition: all 0.2s
+			&:first-child
+				top: 0
+			&:last-child
+				top: auto
+				bottom: 0
+		&.active
+			span
+				transform: scale(0)
+				&:first-child
+					transform: rotate(-45deg)
+					top: calc(50% - 1px)
+				&:last-child
+					transform: rotate(45deg)
+					bottom: calc(50% - 1px)
+
+	/* @media (max-width: 497px)
+		margin-left: auto */
+
+
+// .menu__body
+.menu__body
+	@media (max-width: 991px)
+		padding: 20px
+		margin-left: 0
+		z-index: 5
+		position: absolute
+		top: 0
+		left: -100%
+		height: 100vh
+		width: 100%
+		background-color: rgba(0, 0, 0, 0.7)
+		display: flex
+		overflow: auto
+		transition: all 0.7s
+	&.active
+		left: 0
+	@media (max-width: 497px)
+		flex-direction: column
+	
+// .menu__list
+.menu__list
+	list-style-type: none
+	display: flex
+	gap: 40px
+
+	@media (max-width: 991px)
+		flex-direction: column
+		align-items: center
+		padding: 30px
+		gap: 30px
+		margin: auto
+
+// .menu__link
+.menu__link
+
+	@media (max-width: 991px)
+		display: block
+		font-size: 30px
+		line-height: 70px
+
+.square__menu
+	@media (max-width: 991px)
+		display: flex
+	@media (max-width: 497px)
+		margin: 40px 0 40px 0
+		justify-content: center
+		gap: 20px
+
+.square__link
+	@media (max-width: 497px)
+		margin: 0

@@ -1,0 +1,215 @@
+.story__container
+	padding: 238px 40px 120px
+
+.story__content
+	width: 1160px
+	height: 615px
+
+.story__title
+	font-family: Audiowide
+	font-weight: 400
+	font-size: 37px
+	text-align: center
+	text-transform: uppercase
+	span
+		color: #A8A8A8
+
+.story__tabflotation
+	display: flex
+	margin-top: 61px
+
+// Tabs
+
+.tab
+	display: flex
+	align-items: center
+	padding-left: 28px
+	width: 282px
+	height: 72px
+	border-radius: 0px
+	font-family: DMMono
+	font-weight: 400
+	font-size: 16px
+	cursor: pointer
+	&:hover
+		background: #222
+		color: #8dfd1b
+
+.tab__active
+	background: #222
+	color: #8dfd1b
+
+// Flotation
+
+.story__flotation
+	position: relative
+	width: 878px
+
+.flotation
+	position: absolute
+	opacity: 0
+	width: 878px
+	display: flex
+	padding: 60px
+	background: #222
+	transform: scaleX(0)
+
+.flotation__active
+	position: absolute
+	width: auto
+	opacity: 1
+	overflow: hidden
+	transition: transform 0.9s ease-out
+	transform-origin: left top 0
+	transform: scaleX(1)
+	will-change: transform
+
+.flotation__image
+	width: 100%
+	height: 100%
+
+.flotation__text
+	margin-left: 40px
+
+.flotation__green-block
+	display: flex
+
+.flotation__green-line
+	border-left: 2px solid #8dfd1b
+	height: 93px
+
+.flotation__green-text
+	margin-left: 22px
+	font-family: DMMono
+	font-weight: 400
+	font-size: 21px
+	line-height: 32px
+	color: #8dfd1b
+
+.flotation__descr
+	margin-top: 17px
+	font-family: Inter
+	font-weight: 400
+	font-size: 16px
+	line-height: 26px
+	&:nth-child(2)
+		margin-top: 32px
+	&:nth-child(3)
+		margin-top: 18px
+
+
+// Media
+@media (max-width: 1249px)
+	.tab
+		width: 250px
+	.story__flotation
+		width: 839px
+
+@media (max-width: 1178px)
+	.story__content
+		width: 1050px
+	.story__flotation
+		width: 800px
+	.flotation__image
+		width: 162px
+		height: 243px
+	.flotation__green-text
+		font-size: 19px
+	.flotation__descr
+		font-size: 15px
+
+@media (max-width: 1139px)
+	.tab
+		font-size: 15px
+	.story__content
+		width: 950px
+	.story__flotation
+		width: 700px
+	.flotation__image
+		width: 145px
+		height: 226px
+	.flotation__green-text
+		font-size: 16px
+	.flotation__descr
+		font-size: 13px
+
+@media (max-width: 1039px)
+	.tab
+		width: 230px
+		font-size: 14px
+	.story__content
+		width: 880px
+	.story__title
+		font-size: 32px
+	.story__flotation
+		width: 650px
+	.flotation__image
+		width: 135px
+		height: 205px
+	.flotation__green-text
+		font-size: 14px
+	.flotation__descr
+		font-size: 11px
+
+@media (max-width: 991px)
+	.tab
+		width: 210px
+		height: 62px
+	.story__content
+		width: 810px
+	.story__title
+		font-size: 31px
+	.story__flotation
+		width: 600px
+	.flotation__image
+		width: 120px
+		height: 175px
+	.flotation__green-text
+		font-size: 13px
+	.flotation__descr
+		font-size: 10px
+
+@media (max-width: 899px)
+	.tab
+		font-size: 13px
+	.story__content
+		width: 740px
+		height: 495px
+	.story__flotation
+		width: 530px
+	.flotation
+		padding: 45px
+	.flotation__text
+		margin-left: 30px
+	.flotation__image
+		width: 102px
+		height: 150px
+	.flotation__green-line
+		height: 75px
+	.flotation__green-text
+		font-size: 12px
+		line-height: 27px
+		margin-left: 15px
+	.flotation__descr
+		margin-top: 9px
+		line-height: 22px
+		&:nth-child(2)
+			margin-top: 15px
+		&:nth-child(3)
+			margin-top: 10px
+
+@media (max-width: 829px)
+	.tab
+		width: 185px
+		height: 54px
+		font-size: 11px
+	.story__content
+		width: 685px
+	.story__flotation
+		width: 490px
+	
+@media (max-width: 757px)
+	.story__content
+		width: 668px
+	.flotation__image
+		display: none

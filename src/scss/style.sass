@@ -1,0 +1,79 @@
+@import "blocks/header"
+@import "blocks/promo"
+@import "blocks/collection"
+@import "blocks/ticker"
+@import "blocks/artists"
+@import "blocks/story"
+@import "blocks/fullimage"
+@import "blocks/roadmap"
+@import "blocks/partners"
+@import "blocks/questions"
+@import "blocks/team"
+@import "blocks/contact"
+@import "blocks/discord"
+@import "blocks/footer"
+@import "fonts"
+
+
+
+*
+	font-family: "Audiowide", "DMMono", "Inter", sans-serif
+	font-weight: 400
+	margin: 0
+	padding: 0
+	border: 0
+	box-sizing: border-box
+	&::before
+		margin: 0
+		padding: 0
+		border: 0
+		box-sizing: border-box
+	&::after
+		margin: 0
+		padding: 0
+		border: 0
+		box-sizing: border-box
+
+a
+	text-decoration: none
+
+ul
+	list-style: none
+
+ol
+	list-style: none
+
+li
+	list-style: none
+
+img
+	vertical-align: top
+
+h1, h2, h3, h4, h5, h6
+	font-weight: normal
+	font-size: normal
+
+body, html
+	overflow-x: hidden
+	height: 100%
+	line-height: 1
+	font-size: 16px
+	background-color: #000 //#7a2c2c
+	color: #fff
+
+body
+	&.lock
+		overflow: hidden // Это нужно чтобы не работал скролл на главной странице
+
+body
+	&::-webkit-scrollbar
+		width: 9px
+	&::-webkit-scrollbar-track
+		background: none
+	&::-webkit-scrollbar-thumb
+		background-color: #fff
+		border-radius: 15px
+
+.container
+	max-width: 1440px
+	margin: 0 auto
